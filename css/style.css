@@ -1,0 +1,163 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #fafafa;
+  font-family: 'Poiret One', cursive;
+}
+::-moz-selection {
+  color: red;
+}
+::selection {
+  color: red;
+}
+h1 {
+   font-family: 'Poiret One', cursive;
+}
+#top {
+  height: 80px;
+}
+.navigation {
+  background-color: #ffffff;
+  height: 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.0975);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0px 50px;
+  box-sizing: border-box;
+  z-index: 2;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+}
+.navigation .logo a, .navigation .logo-min a {
+  position: relative;
+  top: 5px;
+  color: #000000;
+  font-size: 25px;
+  text-decoration: none;
+  font-family: 'Poiret One', cursive;
+}
+
+.navigation-icons {
+  position: absolute;
+  right: 150px;
+}
+
+.navigation-search-container input:focus {
+  outline: none;
+}
+
+.navigation-search-container input::placeholder {
+  text-align: center;
+}
+
+.navigation-icons a {
+  text-decoration: none;
+  /*cursor: cell;*/
+}
+
+.navigation-link i {
+  margin-left: 30px;
+  color: black;
+  text-decoration: none;
+  font-size: 22px;
+}
+.logo-min, .logo {
+  position: absolute;
+}
+.logo-min {
+  display: none;
+}
+
+/*cursor*/
+body {
+  /*cursor: none ;*/
+}
+.cursor {
+  height: 20px;
+  width: 20px;
+  border: 1px solid gray;
+  border-radius: 50%;
+  z-index: 100;
+  transition: 0.2s ease-out;
+  animation: pulsate .5s infinite alternate;
+  transform: translate(-50%, -50%);
+  /*position: absolute;*/
+  position: fixed;
+  pointer-events: none;  /*for disabling click on this element*/
+}
+.cursor:after{
+  content: '';
+  height: 40px;
+  width: 40px;
+  top: -11px;
+  left: -11px;
+  position: absolute;
+  border: 10px solid gray;
+  opacity: 0.4;
+  border-radius: 50%;
+  z-index: 1;
+  transition: 0.2s ease-out;
+  animation: outerPulsate .6s infinite alternate;
+}
+
+@keyframes pulsate {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.7);
+  }
+}
+@keyframes outerPulsate {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0.5);
+  }
+}
+
+.clicked {
+  animation: clicked .5s forwards;
+  border: 1px solid red;
+}
+
+@keyframes clicked {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}
+.hero {
+  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+}
+.cool-guy {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  top: 48px;
+}
+.btn-default {
+  border: 1px solid gray;
+  background: transparent;
+  outline: none;
+}
+.btn-default:hover {
+  color: #fff;
+  background: #000;
+}
