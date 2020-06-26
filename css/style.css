@@ -2,9 +2,9 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  margin: 0;
+  margin: 0;  
   padding: 0;
-  background: #fafafa;
+  background: #f8f8f8;
   font-family: 'Poiret One', cursive;
 }
 ::-moz-selection {
@@ -20,7 +20,7 @@ h1 {
   height: 80px;
 }
 .navigation {
-  background-color: #ffffff;
+  background-color: #fff;
   height: 80px;
   position: fixed;
   width: 100%;
@@ -144,13 +144,12 @@ body {
   }
 }
 .hero {
-  background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+  /* background: rgba(var(--d87,255,255,255),1); */
 }
 .cool-guy {
-  position: absolute;
-  width: 350px;
-  height: 350px;
-  top: 48px;
+  width: 400px;
+  height: 400px;
+  padding: 50px;
 }
 .btn-default {
   border: 1px solid gray;
@@ -160,4 +159,45 @@ body {
 .btn-default:hover {
   color: #fff;
   background: #000;
+}
+.insta-post {
+  background-color: #ffffff;
+  border: 1px solid lightgray;
+  border-collapse: collapse;
+}
+.insta-header {
+  height: 50px;
+  border-bottom: 1px solid lightgray;
+}
+.insta-header img {
+  margin: 10px;
+  width: 30px;
+  left: 10px;
+  top: 15px;
+  border-radius: 50%;
+  border: 1px solid lightgray;
+}
+.insta-header a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+.insta-header i {
+  float: right;
+  margin: 15px;
+}
+.insta-footer {
+  height: 50px;
+  border-top: 1px solid lightgray;
+}
+.insta-footer i {
+  margin: 15px;
+}
+.fa-bookmark-o {
+  float: right;
+}
+.hero-post {
+  position: absolute;
+  top: -60px;
+  right: 20px;
 }
