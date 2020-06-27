@@ -50,6 +50,9 @@ h1 {
   position: absolute;
   right: 150px;
 }
+.mobile-navigation {
+  display: none;
+}
 
 .navigation-search-container input:focus {
   outline: none;

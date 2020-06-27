@@ -6,6 +6,13 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px)  {
   .navigation-icons {
     top: 34px;
+    right: 80px;
+  }
+  .hero-post {
+    right: -60px;
+  }
+  .hero-heading {
+    margin-left: -20px;
   }
 }
 
@@ -14,12 +21,20 @@ and (max-device-width : 1024px)  {
 and (min-device-width : 375px)
 and (max-device-width : 812px)
 and (-webkit-device-pixel-ratio : 3) {
-  .navigation {
-    padding: 0 20px;
-    justify-content: space-between;
+  .logo {
+    margin: auto;
   }
   .navigation-icons {
+    display: none;
+  }
+  .mobile-navigation {
     display: flex;
+    position: absolute;
+    background-color: #fff;
+    height: 80px;
+    width: 100%;
+    bottom: 0;
+    justify-content: center;
   }
 }
 
