@@ -78,7 +78,51 @@ and (-webkit-device-pixel-ratio : 3) {
 /*iPhone 6, 7, & 8 */
 @media only screen
 and (min-device-width : 375px)
-and (max-device-width : 667px) { /* STYLES GO HERE */}
+and (max-device-width : 667px) {
+  .logo {
+    margin: auto;
+  }
+  .navigation-icons {
+    display: none;
+  }
+  .mobile-navigation {
+    display: flex;
+    position: fixed;
+    height: 80px;
+    background-color: #fff;
+    width: 100%;
+    bottom: 0;
+    justify-content: center;
+    z-index: 100;
+  }
+  .hero-post {
+    position: relative;
+    margin-top: 80px;
+    right: 0;
+    top: 0;
+  }
+  .mobile-navigation a {
+    margin: 25px 28px;
+  }
+  .navigation-link i {
+    font-size: 30px;
+    margin-left: 0;
+  }
+  .hero  {
+    padding: 50px 0;
+  }
+  .buttons  {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: -20px;
+  }
+  .cool-guy {
+    width: 342px;
+    height: 342px;
+    padding: 50px;
+  }
+}
 
 /*iPhone 6, 7, & 8 Plus */
 @media only screen
