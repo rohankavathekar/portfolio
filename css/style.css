@@ -89,7 +89,7 @@ h1 {
   width: 20px;
   border: 1px solid gray;
   border-radius: 50%;
-  z-index: 100;
+  z-index: 101;
   transition: 0.2s ease-out;
   animation: pulsate .5s infinite alternate;
   transform: translate(-50%, -50%);
