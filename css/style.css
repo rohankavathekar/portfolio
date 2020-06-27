@@ -155,9 +155,10 @@ h1 {
   border: 1px solid gray;
   background: transparent;
   outline: none;
+  color: #000;
 }
 .btn-default:hover {
-  color: #fff;
+  color: #fff !important;
   background: #000;
 }
 .insta-post {
