@@ -1,5 +1,3 @@
-
-
 /*ipad*/
 @media only screen
 and (min-device-width : 768px)
@@ -9,10 +7,21 @@ and (max-device-width : 1024px)  {
     right: 80px;
   }
   .hero-post {
-    right: -60px;
+    position: relative;
+    margin-top: 80px;
+    right: 0;
+    top: 0;
   }
-  .hero-heading {
-    margin-left: -20px;
+  .cool-guy {
+    width: 100%;
+    height: 500px;
+  }
+  .buttons  {
+    display: flex;
+    justify-content: center;
+  }
+  .logo-min, .logo {
+    left: 60px;
   }
 }
 
@@ -29,12 +38,40 @@ and (-webkit-device-pixel-ratio : 3) {
   }
   .mobile-navigation {
     display: flex;
-    position: absolute;
-    background-color: #fff;
+    position: fixed;
     height: 80px;
+    background-color: #fff;
     width: 100%;
     bottom: 0;
     justify-content: center;
+    z-index: 100;
+  }
+  .hero-post {
+    position: relative;
+    margin-top: 80px;
+    right: 0;
+    top: 0;
+  }
+  .mobile-navigation a {
+    margin: 25px 28px;
+  }
+  .navigation-link i {
+    font-size: 30px;
+    margin-left: 0;
+  }
+  .hero  {
+    padding: 50px 0;
+  }
+  .buttons  {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-left: -20px;
+  }
+  .cool-guy {
+    width: 342px;
+    height: 342px;
+    padding: 50px;
   }
 }
 
