@@ -8,6 +8,7 @@ $(document).ready(function(){
       this.cursorClick();
       this.changeLogo();
       this.rellax();
+      this.workDetails();
     },
     cursor: function() {
       $(document).mousemove(function(event){
@@ -38,6 +39,18 @@ $(document).ready(function(){
     },
     rellax: function() {
       var rellax = new Rellax('.rellax');
+    },
+    workDetails: function() {
+      $(".work-holder")
+  	  .mouseenter( () => {
+        $(".work-holder").addClass("hover");
+        $(".details").addClass("hover");
+  	  }) 
+  	  .mouseleave( () => {
+        $(".work-holder").removeClass("hover");
+        $(".details").removeClass("hover");
+  	  }
+    );
     }
   }
   Main.init();

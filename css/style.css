@@ -15,6 +15,7 @@ body {
 }
 h1 {
    font-family: 'Poiret One', cursive;
+   font-size: 48px;
 }
 #top {
   height: 80px;
@@ -147,8 +148,8 @@ h1 {
   }
 }
 .cool-guy {
-  width: 400px;
-  height: 400px;
+  width: 320px;
+  height: 320px;
   padding: 50px;
 }
 .btn-default {
@@ -156,6 +157,7 @@ h1 {
   background: transparent;
   outline: none;
   color: #000;
+  border-radius: 0;
 }
 .btn-default:hover {
   color: #fff !important;
@@ -165,6 +167,7 @@ h1 {
   background-color: #ffffff;
   border: 1px solid lightgray;
   border-collapse: collapse;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
 }
 .insta-header {
   height: 50px;
@@ -201,4 +204,41 @@ h1 {
   position: absolute;
   top: -60px;
   right: 20px;
+}
+
+.work-holder {
+  width: 350px;
+  height: 350px;
+  background-image: url('../img/work1.png');
+  background-size: contain;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+.hover {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/work1.png');
+  display: block !important;
+}
+.heading {
+  text-align: center; 
+  text-transform: uppercase;
+}
+.details {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  display: none;
+}
+.btn-inverse {
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 0;
+}
+.btn-inverse:hover {
+  background: #fff !important;
+  color: #000;
+}
+h4 {
+  text-transform: uppercase;
+  font-weight: 700;
 }
