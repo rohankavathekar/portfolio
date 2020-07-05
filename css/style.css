@@ -205,40 +205,13 @@ h1 {
   top: -60px;
   right: 20px;
 }
-
-.work-holder {
-  width: 350px;
-  height: 350px;
-  background-image: url('../img/work1.png');
-  background-size: contain;
-  box-shadow: 0 0 10px rgba(0,0,0,0.15);
-  cursor: pointer;
-}
-.hover {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/work1.png');
-  display: block !important;
-}
 .heading {
-  text-align: center; 
   text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 80px;
 }
-.details {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%,-50%);
-  display: none;
-}
-.btn-inverse {
-  border: 2px solid #fff;
-  color: #fff;
-  border-radius: 0;
-}
-.btn-inverse:hover {
-  background: #fff !important;
-  color: #000;
-}
-h4 {
-  text-transform: uppercase;
-  font-weight: 700;
+.work-holder {
+  width: 360px;
+  height: 360px;
+  background-color: limegreen;
 }
