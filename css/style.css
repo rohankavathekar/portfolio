@@ -4,8 +4,11 @@ html {
 body {
   margin: 0;  
   padding: 0;
-  background: #f8f8f8;
+  /* background: #f8f8f8; */
   font-family: 'Poiret One', cursive;
+  background-image: url("../img/hero-bg.jpg");
+  background-size: cover;
+  background-attachment: fixed;
 }
 ::-moz-selection {
   color: red;
@@ -147,6 +150,7 @@ h1 {
     opacity: 0;
   }
 }
+
 .cool-guy {
   width: 320px;
   height: 320px;
@@ -204,4 +208,7 @@ h1 {
   position: absolute;
   top: -60px;
   right: 20px;
+}
+h3 {
+  line-height: 3rem;
 }
