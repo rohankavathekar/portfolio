@@ -16,6 +16,12 @@ body {
 ::selection {
   color: red;
 }
+.anchor{
+  display: block;
+  height: 80px; 
+  margin-top: -80px;
+  visibility: hidden;
+}
 h1 {
    font-family: 'Poiret One', cursive;
    font-size: 48px;
@@ -225,8 +231,9 @@ h3 {
 }
 
 .work-holder {
-  margin: 15px 0;
+  /* margin: 15px 0; */
   padding: 0;
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
 }
 
 .work-holder figure {
