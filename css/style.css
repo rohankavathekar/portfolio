@@ -20,8 +20,8 @@ h1 {
    font-family: 'Poiret One', cursive;
    font-size: 48px;
 }
-#top {
-  height: 80px;
+.hero {
+  padding: 200px 0 80px 0;
 }
 .navigation {
   background-color: #fff;
@@ -312,7 +312,7 @@ footer {
   text-align: center;
 }
 .contact {
-  margin: 120px 0 0 80px;
+  margin: 120px 0 80px 0;
 }
 
 /* Wrapper */
@@ -391,33 +391,4 @@ footer {
 }
 .copy {
   margin: 0;
-}
-
-@media all and (max-width: 680px) {
-  .icon-button {
-    border-radius: 1.6rem;
-    font-size: 0.8rem;
-    height: 1.6rem;
-    line-height: 1.6rem;
-    width: 1.6rem;
-  }
-
-  .icon-button:hover span {
-    width: 1.6rem;
-    height: 1.6rem;
-    border-radius: 1.6rem;
-    margin: -0.8rem;
-  }
-
-  /* Icons */
-  .icon-button i {
-	  height: 1.6rem;
-	  line-height: 1.6rem;
-	  width: 1.6rem;
-  }
-
-  .pinterest {
-   display: none; 
-  }
-
 }

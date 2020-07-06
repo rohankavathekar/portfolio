@@ -6,6 +6,9 @@ and (max-device-width : 1024px)  {
     top: 34px;
     right: 80px;
   }
+  .about h1{
+    font-size: 45px;
+  }
   .hero-post {
     position: relative;
     margin-top: 80px;
@@ -30,11 +33,22 @@ and (max-device-width : 1024px)  {
 and (min-device-width : 375px)
 and (max-device-width : 812px)
 and (-webkit-device-pixel-ratio : 3) {
+  h1 {
+    font-size: 42px;
+    text-align: left !important;
+  }
   .logo {
     margin: auto;
   }
+  .hero {
+    padding-top: 150px !important;
+  }
   .navigation-icons {
     display: none;
+  }
+  .work {
+    margin: 0;
+    text-align: center;
   }
   .mobile-navigation {
     display: flex;
@@ -74,12 +88,20 @@ and (-webkit-device-pixel-ratio : 3) {
     padding: 50px;
   }
   .rellax { transform: translate3d(0,0,0) !important; }
+  .icon-button {
+    margin: 20px 40px;
+  }
 }
 
 /*iPhone 6, 7, & 8 */
 @media only screen
-and (min-device-width : 375px)
 and (max-device-width : 667px) {
+   h3 {
+    font-size: 1.55rem;
+   }
+  .hero {
+    padding-top: 150px !important;
+  }
   .logo {
     margin: auto;
   }
@@ -125,9 +147,5 @@ and (max-device-width : 667px) {
     padding: 50px;
   }
   .rellax { transform: translate3d(0,0,0) !important; }
-}
 
-/*iPhone 6, 7, & 8 Plus */
-@media only screen
-and (min-device-width : 414px)
-and (max-device-width : 736px) { /* STYLES GO HERE */}
+}
