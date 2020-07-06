@@ -9,6 +9,7 @@ $(document).ready(function(){
       this.changeLogo();
       this.rellax();
       this.workDetails();
+      this.AOS();
     },
     cursor: function() {
       $(document).mousemove(function(event){
@@ -51,6 +52,13 @@ $(document).ready(function(){
         $(".details").removeClass("hover");
   	  }
     );
+    },
+    AOS: function() {
+      AOS.init({
+        offset: 200,
+        duration: 1000,
+        once: true
+      });
     }
   }
   Main.init();
