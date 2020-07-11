@@ -53,12 +53,13 @@ and (-webkit-device-pixel-ratio : 3) {
   .mobile-navigation {
     display: flex;
     position: fixed;
-    height: 80px;
+    height: 60px;
     background-color: #fff;
     width: 100%;
     bottom: 0;
     justify-content: center;
     z-index: 100;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
   }
   .hero-post {
     position: relative;
@@ -112,12 +113,13 @@ and (max-device-width : 667px) {
     border-top: 1px solid rgba(0, 0, 0, 0.0975);
     display: flex;
     position: fixed;
-    height: 80px;
+    height: 60px;
     background-color: #fff;
     width: 100%;
     bottom: 0;
     justify-content: center;
     z-index: 100;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
   }
   .hero-post {
     position: relative;
@@ -126,7 +128,7 @@ and (max-device-width : 667px) {
     top: 0;
   }
   .mobile-navigation a {
-    margin: 25px 32px;
+    margin: 15px 38px;
   }
   .navigation-link i {
     font-size: 30px;

@@ -5,10 +5,11 @@ body {
   margin: 0;  
   padding: 0;
   /* background: #f8f8f8; */
-  font-family: 'Poiret One', cursive;
+  font-family: 'Open Sans', sans-serif;
   background-image: url("../img/hero-bg.jpg");
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
 }
 ::-moz-selection {
   color: red;
@@ -23,7 +24,6 @@ body {
   visibility: hidden;
 }
 h1 {
-   font-family: 'Poiret One', cursive;
    font-size: 48px;
 }
 .hero {
@@ -36,7 +36,7 @@ h1 {
   width: 100%;
   top: 0;
   left: 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.0975);
+  box-shadow: 0 0 10px rgba(0,0,0,0.15);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -53,7 +53,7 @@ h1 {
   color: #000000;
   font-size: 25px;
   text-decoration: none;
-  font-family: 'Poiret One', cursive;
+  font-family: 'Cinzel Decorative', cursive;
 }
 
 .navigation-icons {
@@ -156,9 +156,9 @@ h1 {
     opacity: 0;
   }
 }
-.btn {
-  font-family: 'Major Mono Display', monospace;
-}
+/* .btn {
+  font-family: 'Open Sans', sans-serif;
+} */
 
 .cool-guy {
   width: 320px;
@@ -380,6 +380,9 @@ footer {
 }
 
 
+.linkedin span {
+	background-color: #0e76a8;
+}
 .twitter span {
 	background-color: #4099ff;
 }
@@ -398,4 +401,7 @@ footer {
 }
 .copy {
   margin: 0;
+}
+span {
+  color: blueviolet;
 }
